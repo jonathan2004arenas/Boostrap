@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- onload="saludo()" -->
+  <a href="#" class="whatsapp"><img src="img/whatsapp.png" alt="whatsapp"></a>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-portafolio-nav">
+            <!-- CONTAINER-FLUID LLEVA EL CONTENIDO AL 100% DE LA PAGINA -->
+            <!-- CONTAINER CENTRA EL CONTENIDO -->
+            <div class="container-fluid">
+              
+                <!-- DENTRO DE ESTE HIPERVINCULO LA CLASE ES PARA EL LOGO O LA MARCA DE LA PAGINA -->
+                <a class="navbar-brand" href="index.html"><img src="img/logo1 sin fondo (1).png" alt="logo"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="img/menu.png" alt="boton-menu">
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </nav>
+
+          <!-- ESTE ES EL CODIGO DE EL CARRUSEL -->
+          <div id="carouselHeroCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- ESTO ES LAS RAYAS QUE INDICAN EN QUE PAGINA ESTA -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+              <!-- class="carousel-item active EL ACTIVE ES DONDE VA A EMPEZAR EL CARRUSEL -->
+                <div class="carousel-item active">
+                <img src="img/Untitled/Horizontal1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <img src="img/Untitled/Horizontal2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <img src="img/Untitled/Horizontal3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              
+            
+            <div class="carousel-item">
+                <img src="img/Untitled/Horizontal4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-6 text-center">
+                        <img src="img/VERTICAL.jpg" class="w-100" alt="imagen">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h3>Sobre Nosotros</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit vitae praesentium doloremque, asperiores veniam eos magni molestiae ab est hic. Dolorem nesciunt omnis repellat hic, minus dolore reprehenderit quidem illo corporis eligendi ex voluptatibus animi neque enim sunt labore delectus mollitia corrupti in. Beatae dolorum sit, id, molestiae amet molestias voluptatibus veniam minus magnam distinctio perferendis laboriosam fuga ab et quasi, sint unde dolore nemo qui. Vel, ducimus vitae earum expedita dolores delectus. Laboriosam, hic repellendus praesentium natus atque consectetur, blanditiis quae, magnam iure perferendis nam repellat minima? Asperiores a ea placeat doloribus fugit ratione enim exercitationem ex laudantium sint? Ab voluptatum consequatur debitis optio in omnis maxime excepturi sapiente atque dicta, assumenda doloremque quaerat molestias voluptates? Provident, repudiandae earum incidunt illo nostrum sunt quam vero velit voluptates obcaecati at omnis harum amet inventore exercitationem temporibus nemo numquam soluta laborum vitae quia perferendis quasi! Necessitatibus repellendus ducimus libero ipsa fugiat error corrupti! Quis exercitationem rem ratione neque praesentium! Deserunt perspiciatis ducimus alias blanditiis nobis, accusamus reprehenderit tempore sunt facere repudiandae aperiam, dicta impedit atque facilis eaque autem sequi pariatur nisi rerum enim quas. Repellat repellendus dolores a adipisci minima eos, voluptatibus deleniti consequuntur minus, sed magnam voluptates eius magni ut ea hic placeat laboriosam id quae. Nobis sequi sapiente modi iure earum unde cumque, veritatis quisquam consequuntur recusandae exercitationem assumenda doloremque optio corporis. Commodi esse atque eos repellendus ea hic cum quae ad iure consequatur. Deleniti temporibus earum nostrum explicabo corrupti facere odio voluptates laboriosam maxime molestiae, eum iste voluptate voluptas nisi, dolorum incidunt veritatis voluptatem quam reprehenderit. Consequatur nam quasi dicta quis voluptates qui odio ad aliquam fugit sapiente alias, vero explicabo voluptatem in id hic enim ipsam obcaecati recusandae deleniti ut atque! Perspiciatis, repellat, eum explicabo unde deserunt qui sapiente tenetur animi excepturi eos voluptatibus quasi nemo distinctio deleniti exercitationem odio esse quod autem quam harum aliquid? Animi eaque, tenetur a temporibus ab eum quaerat? Magnam dolor ipsam accusamus sunt quo facilis sit error similique in iste asperiores itaque, ea, mollitia nostrum</p>
+
+                        <a href="#" class="btn-primary-p">Saber mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>SERVICIOS</h2>
+                <!-- ROW ES UNA CLASE PARA LAS FILAS -->
+                <div class="row">
+                    
+                    <div class="col-lg-3  col-md-6 col-sm-12 item-servicio">
+                        <img src="img/CUADRADA.jpg" class="w-100" alt="imagen">
+                        <h3>Servicio 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi distinctio qui iusto cum</p>
+                        <a href="#" class="btn-primary-p">Ver más</a>
+                    </div>
+                    
+                    <div class="col-lg-3  col-md-6 col-sm-12 item-servicio">
+                        <img src="img/CUADRADA2.jpg" class="w-100" alt="imagen">
+                        <h3>Servicio 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi distinctio qui iusto cum</p>
+                        <a href="#" class="btn-primary-p">Ver más</a>
+                    </div>
+                    
+                    <div class="col-lg-3  col-md-6 col-sm-12 item-servicio">
+                        <img src="img/CUADRADA3.jpg" class="w-100" alt="imagen">
+                        <h3>Servicio 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi distinctio qui iusto cum</p>
+                        <a href="#" class="btn-primary-p">Ver más</a>
+                    </div>
+                    
+                    <div class="col-lg-3  col-md-6 col-sm-12 item-servicio">
+                        <img src="img/CUADRADA4.jpg" class="w-100" alt="imagen">
+                        <h3>Servicio 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi distinctio qui iusto cum</p>
+                        <a href="#" class="btn-primary-p">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="questions">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-lg-6">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pregunta Frecuente #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pregunta Frecuente #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Pregunta Frecuente #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <img src="img/undraw_passing_by_0un9.svg" class="w-100" alt="undraw">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="javascript">
+            <div id="panel-lateral">
+              <button class="close-panel" onclick="panelLateral()">X</button>
+              <h3>Menu Principal</h3>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+              </ul>
+            </div>
+
+            <div id="panel-superior">
+              <button class="close-panel2" onclick="panelSuperior()">X</button>
+              <h3>Menu Principal</h3>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+              </ul>
+            </div>
+
+            <div class="container-fluid text-center">
+              <h2>JAVASCRIPT</h2>
+              <div class="row">
+                
+                <div class="col-lg-6">
+                  <button onclick="circulo()">CIRCULO</button>
+                  <button onclick="horizontal()">HORIZONTAL</button>
+                  <button onclick="vertical()">VERTICAL</button>
+                  <button onclick="gif()">GIF</button>
+                  <button onclick="movetop()">TOP</button>
+                  <button onclick="moverigth()">RIGHT</button>
+                  <button onclick="moveleft()">LEFT</button>
+                  <button onclick="movebottom()">BOTTOM</button>
+                  <button onclick="degradado()">DEGRADADO</button>
+                  <button onclick="rombo()">ROMBO</button>
+                  <button onclick="triangulo()">TRIANGULO</button>
+                  <button onclick="panelLateral()">PANEL LATERAL</button>
+                  <button onclick="panelSuperior()">PANEL SUPERIOR</button>
+                  <hr>
+                  <button onclick="suma()">SUMA</button>
+                  <button onclick="operaciones()">OPERACIONES</button>
+                  <button onclick="mayor()">MAYOR DE DOS NUMEROS</button>
+                  <button onclick="menor()">MENOR DE TRES NUMEROS</button>
+                  <button onclick="promedio()">PROMEDIO</button>
+                  <button onclick="conversion()">CONVERSION</button>
+                  <button onclick="cdt()">CDT</button>
+                  <button onclick="planes()">PLANES NETFLIX</button>
+                  <button onclick="promediofor()">PROMEDIO CON FOR</button>
+                </div>
+
+                <div class="col-lg-6">
+                  <div id="figura"></div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Clase Bootstrap 2023 - Jonathan David Arenas Peña</p>
+    </footer>
+
+    <!-- Modal -->
+    <!-- EL MODAL ES MEJOR DEJARLO ABAJO DEL FOOTER -->
+    <!-- CON CONTROL+D MANTENIENDOLO OPRIMIDO SE PUEDEN CAMBIAR AL MISMO TIEMPO LAS PALABRAS QUE SEAN IGUALES -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar Sesion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="HeroInputEmail1" class="form-label">Correo Electronico</label>
+                      <input type="email" class="form-control" id="HeroInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="HeroInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="HeroInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="HeroCheck1">
+                      <label class="form-check-label" for="HeroCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                  </form>
+            </div>
+            
+            <!-- LO DE ABAJO SON LOS BOTONES DEL MODAL -->
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
